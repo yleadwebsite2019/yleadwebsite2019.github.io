@@ -1,0 +1,833 @@
+<head>
+<!--
+YYYYY                   YYYYY   LLLLL                           EEEEEEEEEEEEEEEEEEEEEEEEEEEEE               AAAAA               DDDDDDDDDDDDDDDD
+  YYYYY               YYYYY     LLLLL                           EEEEEEEEEEEEEEEEEEEEEEEEEEEEE              AAAAAAA              DDDDDDDDDDDDDDDDDDDDD
+    YYYYY           YYYYY       LLLLL                           EEEEEEEEEEEEEEEEEEEEEEEEEEEEE             AAAAAAAAA             DDDDDDDDDDDDDDDDDDDDDDDD
+      YYYYY       YYYYY         LLLLL                           EEEEE                                    AAAAA AAAAA            DDDDD            DDDDDDDDDD
+        YYYYY   YYYYY           LLLLL                           EEEEE                                   AAAAA   AAAAA           DDDDD               DDDDDDDD
+          YYYYYYYYY             LLLLL                           EEEEEEEEEEEEEEEEEEEEEEEEEEEEE          AAAAAAAAAAAAAAA          DDDDD                 DDDDDDD
+            YYYYY               LLLLL                           EEEEEEEEEEEEEEEEEEEEEEEEEEEEE         AAAAAAAAAAAAAAAAA         DDDDD                  DDDDDD
+            YYYYY               LLLLL                           EEEEEEEEEEEEEEEEEEEEEEEEEEEEE        AAAAAAAAAAAAAAAAAAA        DDDDD                 DDDDDDD
+            YYYYY               LLLLL                           EEEEE                               AAAAA           AAAAA       DDDDD               DDDDDDDD
+            YYYYY               LLLLL                           EEEEE                              AAAAA             AAAAA      DDDDD            DDDDDDDDDD
+            YYYYY               LLLLLLLLLLLLLLLLLLLLLLLLLLLLL   EEEEEEEEEEEEEEEEEEEEEEEEEEEEE     AAAAA               AAAAA     DDDDDDDDDDDDDDDDDDDDDDDD
+            YYYYY               LLLLLLLLLLLLLLLLLLLLLLLLLLLLL   EEEEEEEEEEEEEEEEEEEEEEEEEEEEE    AAAAA                 AAAAA    DDDDDDDDDDDDDDDDDDDDD
+            YYYYY               LLLLLLLLLLLLLLLLLLLLLLLLLLLLL   EEEEEEEEEEEEEEEEEEEEEEEEEEEEE   AAAAA                   AAAAA   DDDDDDDDDDDDDDDD
+-->
+
+	<title>
+		Packing List
+	</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8"/>
+	<link rel="shortcut icon" href="../static/icon.png" type="image/x-icon">
+	<link rel="stylesheet" type= "text/css" href="../static/information/packing_list.css">
+	<link href="../static/web-fonts-with-css/css/fontawesome-all.css" rel="stylesheet">
+	<link rel="stylesheet" href="../static/bootstrap.css">
+	<script type="text/javascript" src="../static/jquery.js"></script>
+	<script type="text/javascript" src="../static/popper.js"></script>
+	<script type="text/javascript" src="../static/bootstrap.js"></script>
+</head>
+
+<body>
+	<div id="menu">
+		<nav class="navbar navbar-light">
+			<a class="navbar-brand" href="../templates/home.html" draggable="false">
+				<img class="img-responsive" src="../static/logo.png" height="30" draggable="false">
+			</a>
+			<button id="menu-open" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation" style="float:right;">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<button id="menu-close" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation" style="float:right;">
+				&#10005;
+			</button>
+		</nav>
+		<div class="collapse" id="navbar">
+			<div id="accordion" role="tablist">
+				<div class="card menu-card">
+					<div class="card-header menu-card-header" role="tab" id="about">
+						<h4>
+							<a class="link-header" data-toggle="collapse" href="#aboutc" aria-expanded="true" aria-controls="aboutc" draggable="false">
+								ABOUT
+							</a>
+						</h4>
+					</div>
+					<div id="aboutc" class="collapse" role="tabpanel" aria-labelledby="about" data-parent="#accordion">
+						<div class="card-body">	
+							<a class="link" href="../templates/about.html" draggable="false">
+								ABOUT Y.LEAD
+							</a><br>
+							<a class="link" href="../templates/themes.html" draggable="false">
+								Y.LEAD THEMES
+							</a><br>
+							<!--<a class="link" href="../templates/principals_words.html" draggable="false">
+								PRINCIPAL'S WORDS
+							</a><br>-->
+						</div>
+					</div>
+				</div>
+				<div class="card menu-card">
+					<div class="card-header menu-card-header" role="tab" id="programmes">
+						<h4>
+							<a class="link-header" data-toggle="collapse" href="#programmesc" aria-expanded="true" aria-controls="programmesc" draggable="false">
+								PROGRAMMES
+							</a>
+						</h4>
+					</div>
+					<div id="programmesc" class="collapse" role="tabpanel" aria-labelledby="programmes" data-parent="#accordion">
+						<div class="card-body">
+							<a class="link" href="../templates/programs.html">
+								PROGRAMME FLOW
+							</a><br>
+							<a class="link" href="../templates/opening_ceremony.html" draggable="false">
+								OPENING CEREMONY
+							</a><br>
+							<a class="link" href="../templates/leadership_character_development.html" draggable="false">
+								LEADERSHIP CHARACTER DEVELOPMENT
+							</a><br>
+							<a class="link" href="../templates/learning_journeys.html" draggable="false">
+								LEARNING JOURNEYS
+							</a><br>
+							<a class="link" href="../templates/fifteen_hours_challenge.html" draggable="false">
+								15 HOUR CHALLENGE
+							</a><br>
+							<a class="link" href="../templates/panel_discussion.html" draggable="false">
+								PANEL DISCUSSION
+							</a><br>
+						</div>
+					</div>
+				</div>
+				<div class="card menu-card">
+					<div class="card-header menu-card-header" role="tab" id="information">
+						<h4>
+							<a class="link-header" data-toggle="collapse" href="#informationc" aria-expanded="true" aria-controls="informationc" draggable="false">
+								INFORMATION
+							</a>
+						</h4>
+					</div>
+					<div id="informationc" class="collapse" role="tabpanel" aria-labelledby="information" data-parent="#accordion">
+						<div class="card-body">
+							<!--<a class="link" href="../templates/participating_schools.html" draggable="false">
+								PARTICIPATING SCHOOLS
+							</a><br>-->
+							<a class="link" href="../templates/packing_list.html" draggable="false">
+								PACKING LIST
+							</a><br>
+							<a class="link" href="../templates/questions_n_answers.html" draggable="false">
+								QUESTIONS AND ANSWERS
+							</a><br>
+							<a class="link" href="../templates/documents_for_overseas_participants.html" draggable="false">
+								DOCUMENTS FOR OVERSEAS PARTICIPANTS
+							</a><br>
+						</div>
+					</div>
+				</div>
+				<!--<div class="card menu-card">
+					<div class="card-header menu-card-header" role="tab" id="interviews">
+						<h4>
+							<a class="link-header" data-toggle="collapse" href="#interviewsc" aria-expanded="true" aria-controls="interviewsc" draggable="false">
+								INTERVIEWS
+							</a>
+						</h4>
+					</div>
+					<div id="interviewsc" class="collapse" role="tabpanel" aria-labelledby="interviewsc" data-parent="#accordion">
+						<div class="card-body">
+							<a class="link" href="../templates/pre-event_interviews.html" draggable="false">
+								PRE-EVENT INTERVIEWS
+							</a><br>
+							<a class="link" href="../templates/fam_lead.html" draggable="false">
+								FAM LEAD
+							</a><br>
+						</div>
+					</div>
+				</div>
+				<div class="card menu-card">
+					<div class="card-header menu-card-header" role="tab" id="articles">
+						<h4>
+							<a class="link-header" data-toggle="collapse" href="#articlesc" aria-expanded="true" aria-controls="articlesc" draggable="false">
+								ARTICLES
+							</a>
+						</h4>
+					</div>
+					<div id="articlesc" class="collapse" role="tabpanel" aria-labelledby="articlesc" data-parent="#accordion">
+						<div class="card-body">
+							<a class="link" href="../templates/smart_city.html" draggable="false">
+								SMART CITY
+							</a><br>
+							<a class="link" href="../templates/changemakers.html" draggable="false">
+								CHANGEMAKERS
+							</a><br>
+						</div>
+					</div>
+				</div>-->
+			</div>
+		</div>
+	</div>
+	<div id="content">
+		<img id="img-heading" width="100%" src="../static/information/packing_list.png" draggable="false">
+		<div id="tables">
+				<table class="carousel-table" id="local">
+					<thead>
+						<tr class="heading" id="local-heading">
+							<th style="">
+							</th>
+							<th class="local-table-title local-table-heading-horizontal">
+								ITEMS
+							</th>
+							<th class="local-table-title local-table-heading-horizontal">
+								QUANTITY
+							</th>
+							<th class="local-table-title local-table-heading-horizontal">
+								REMARKS
+							</th>
+							<th class="local-table-title local-table-heading-horizontal">
+								CHECK
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<!-- 1nd -->
+						<tr>
+							<th rowspan="8" class="local-table-header local-table-heading-vertical">
+								<div class="header">
+									CLOTHING &amp; FOOTWEAR
+								</div>
+							</th>
+							<td class="local-tablecell tablecell-item">
+								Y.LEAD SHIRT
+							</td>
+							<td class="local-tablecell tablecell-quantity">
+								1
+							</td>
+							<td class="local-tablecell">
+							</td>
+							<td class="local-tablecell tablecell-check">
+								<label>
+									<input type="checkbox" class="local-checkbox"/>
+									<div class="local-checkmark"><i class="fas fa-check"></i></div>
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td class="local-tablecell tablecell-item">
+								SHORTS
+							</td>
+							<td class="local-tablecell tablecell-quantity">
+								1
+							</td>
+							<td class="local-tablecell">
+								Shorts should be of appropriate length.
+							</td>
+							<td class="local-tablecell tablecell-check">
+								<label>
+									<input type="checkbox" class="local-checkbox"/>
+									<div class="local-checkmark"><i class="fas fa-check"></i></div>
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td class="local-tablecell tablecell-item">
+								SMART CASUAL OUTFIT
+							</td>
+							<td class="local-tablecell tablecell-quantity">
+								1 SET
+							</td>
+							<td class="local-tablecell">
+								Examples would be skirts, dress, long pants, etc. No revealing clothes. No tuxedos allowed for males.
+							</td>
+							<td class="local-tablecell tablecell-check">
+								<label>
+									<input type="checkbox" class="local-checkbox"/>
+									<div class="local-checkmark"><i class="fas fa-check"></i></div>
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td class="local-tablecell tablecell-item">
+								UNDERGARMENTS
+							</td>
+							<td class="local-tablecell tablecell-quantity">
+								SUFFICIENT
+							</td>
+							<td class="local-tablecell">
+							</td>
+							<td class="local-tablecell tablecell-check">
+								<label>
+									<input type="checkbox" class="local-checkbox"/>
+									<div class="local-checkmark"><i class="fas fa-check"></i></div>
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td class="local-tablecell tablecell-item">
+								SLEEPWEAR
+							</td>
+							<td class="local-tablecell tablecell-quantity">
+								SUFFICIENT
+							</td>
+							<td class="local-tablecell">
+							</td>
+							<td class="local-tablecell tablecell-check">
+								<label>
+									<input type="checkbox" class="local-checkbox"/>
+									<div class="local-checkmark"><i class="fas fa-check"></i></div>
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td class="local-tablecell tablecell-item">
+								SOCKS
+							</td>
+							<td class="local-tablecell tablecell-quantity">
+								1 PAIR
+							</td>
+							<td class="local-tablecell">
+							</td>
+							<td class="local-tablecell tablecell-check">
+								<label>
+									<input type="checkbox" class="local-checkbox"/>
+									<div class="local-checkmark"><i class="fas fa-check"></i></div>
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td class="local-tablecell tablecell-item">
+								SWEATER / JACKET
+							</td>
+							<td class="local-tablecell tablecell-quantity">
+								OPTIONAL
+							</td>
+							<td class="local-tablecell">
+							</td>
+							<td class="local-tablecell tablecell-check">
+								<label>
+									<input type="checkbox" class="local-checkbox"/>
+									<div class="local-checkmark"><i class="fas fa-check"></i></div>
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td class="local-tablecell tablecell-item local-tablecell-bottom">
+								SLIPPERS / SANDALS
+							</td>
+							<td class="local-tablecell tablecell-quantity local-tablecell-bottom">
+								1 PAIR
+							</td>
+							<td class="local-tablecell local-tablecell-bottom">
+							</td>
+							<td class="local-tablecell tablecell-check local-tablecell-bottom">
+								<label>
+									<input type="checkbox" class="local-checkbox"/>
+									<div class="local-checkmark"><i class="fas fa-check"></i></div>
+								</label>
+							</td>
+						</tr>
+					<!-- 2nd -->
+						<tr>
+							<th rowspan="4" class="local-table-header local-table-heading-vertical">
+								<div class="header">
+									TOLIETRIES
+								</div>
+							</th>
+							<td class="local-tablecell tablecell-item">
+								TOLIETRIES
+							</td>
+							<td class="local-tablecell tablecell-quantity">
+								SUFFICIENT
+							</td>
+							<td class="local-tablecell">
+							</td>
+							<td class="local-tablecell tablecell-check">
+								<label>
+									<input type="checkbox" class="local-checkbox"/>
+									<div class="local-checkmark"><i class="fas fa-check"></i></div>
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td class="local-tablecell tablecell-item">
+								TOOTHBRUSH &amp; TOOTHPASTE
+							</td>
+							<td class="local-tablecell tablecell-quantity">
+								1
+							</td>
+							<td class="local-tablecell">
+							</td>
+							<td class="local-tablecell tablecell-check">
+								<label>
+									<input type="checkbox" class="local-checkbox"/>
+									<div class="local-checkmark"><i class="fas fa-check"></i></div>
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td class="local-tablecell tablecell-item">
+								BATH TOWEL
+							</td>
+							<td class="local-tablecell tablecell-quantity">
+								1
+							</td>
+							<td class="local-tablecell">
+							</td>
+							<td class="local-tablecell tablecell-check">
+								<label>
+									<input type="checkbox" class="local-checkbox"/>
+									<div class="local-checkmark"><i class="fas fa-check"></i></div>
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td class="local-tablecell tablecell-item local-tablecell-bottom">
+								PLASTIC / ZIPLIOC BAGS
+							</td>
+							<td class="local-tablecell tablecell-quantity local-tablecell-bottom">
+								SUFFICIENT
+							</td>
+							<td class="local-tablecell local-tablecell-bottom">
+							</td>
+							<td class="local-tablecell tablecell-check local-tablecell-bottom">
+								<label>
+									<input type="checkbox" class="local-checkbox"/>
+									<div class="local-checkmark"><i class="fas fa-check"></i></div>
+								</label>
+							</td>
+						</tr>
+					<!-- 3rd -->
+						<tr>
+							<th rowspan="3" class="local-table-header local-table-heading-vertical">
+								<div class="header">
+									OTHERS
+								</div>
+							</th>
+							<td class="local-tablecell tablecell-item">
+								PERSONAL MEDICATION<br>
+								(IF APPLICABLE)
+							</td>
+							<td class="local-tablecell tablecell-quantity">
+								SUFFICIENT
+							</td>
+							<td class="local-tablecell">
+								E.g. Asthma inhaler, etc
+							</td>
+							<td class="local-tablecell tablecell-check">
+								<label>
+									<input type="checkbox" class="local-checkbox"/>
+									<div class="local-checkmark"><i class="fas fa-check"></i></div>
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td class="local-tablecell tablecell-item">
+								WRITING MATERIALS
+							</td>
+							<td class="local-tablecell tablecell-quantity">
+								SUFFICIENT
+							</td>
+							<td class="local-tablecell">
+							</td>
+							<td class="local-tablecell tablecell-check">
+								<label>
+									<input type="checkbox" class="local-checkbox"/>
+									<div class="local-checkmark"><i class="fas fa-check"></i></div>
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td class="local-tablecell tablecell-item local-tablecell-bottom">
+								SPECTACLES / CONTACT LENSES
+							</td>
+							<td class="local-tablecell tablecell-quantity local-tablecell-bottom">
+								SUFFICIENT
+							</td>
+							<td class="local-tablecell local-tablecell-bottom">
+							</td>
+							<td class="local-tablecell tablecell-check local-tablecell-bottom">
+								<label>
+									<input type="checkbox" class="local-checkbox"/>
+									<div class="local-checkmark"><i class="fas fa-check"></i></div>
+								</label>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<table class="carousel-table" id="overseas">
+					<thead>
+						<tr class="heading" id="overseas-heading">
+							<th style="">
+							</th>
+							<th class="overseas-table-title overseas-table-heading-horizontal">
+								ITEMS
+							</th>
+							<th class="overseas-table-title overseas-table-heading-horizontal">
+								QUANTITY
+							</th>
+							<th class="overseas-table-title overseas-table-heading-horizontal">
+								REMARKS
+							</th>
+							<th class="overseas-table-title overseas-table-heading-horizontal">
+								CHECK
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<!-- 1nd -->
+						<tr>
+							<th rowspan="9" class="overseas-table-header overseas-table-heading-vertical">
+								<div class="header">
+									CLOTHING &amp; FOOTWEAR
+								</div>
+							</th>
+							<td class="overseas-tablecell tablecell-item">
+								T-SHIRTS<br>T-恤
+							</td>
+							<td class="overseas-tablecell tablecell-quantity">
+								4
+							</td>
+							<td class="overseas-tablecell">
+								School-based shirts are encouraged. Including an extra change of clothes. 2 Y.LEAD shirts will be given.
+							</td>
+							<td class="overseas-tablecell tablecell-check">
+								<label>
+									<input type="checkbox" class="overseas-checkbox"/>
+									<div class="overseas-checkmark"><i class="fas fa-check"></i></div>
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td class="overseas-tablecell tablecell-item">
+								SHORTS<br>短裤
+							</td>
+							<td class="overseas-tablecell tablecell-quantity">
+								5
+							</td>
+							<td class="overseas-tablecell">
+								Shorts should be of appropriate length.
+							</td>
+							<td class="overseas-tablecell tablecell-check">
+								<label>
+									<input type="checkbox" class="overseas-checkbox"/>
+									<div class="overseas-checkmark"><i class="fas fa-check"></i></div>
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td class="overseas-tablecell tablecell-item">
+								SMART CASUAL OUTFIT<br>休闲衣装
+							</td>
+							<td class="overseas-tablecell tablecell-quantity">
+								1 SET
+							</td>
+							<td class="overseas-tablecell">
+								Examples would be skirts, dress, long pants, etc. No revealing clothes. No tuxedos allowed for males.
+							</td>
+							<td class="overseas-tablecell tablecell-check">
+								<label>
+									<input type="checkbox" class="overseas-checkbox"/>
+									<div class="overseas-checkmark"><i class="fas fa-check"></i></div>
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td class="overseas-tablecell tablecell-item">
+								UNDERGARMENTS<br>内衣／内裤
+							</td>
+							<td class="overseas-tablecell tablecell-quantity">
+								SUFFICIENT
+							</td>
+							<td class="overseas-tablecell">
+							</td>
+							<td class="overseas-tablecell tablecell-check">
+								<label>
+									<input type="checkbox" class="overseas-checkbox"/>
+									<div class="overseas-checkmark"><i class="fas fa-check"></i></div>
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td class="overseas-tablecell tablecell-item">
+								SLEEPWEAR<br>睡衣
+							</td>
+							<td class="overseas-tablecell tablecell-quantity">
+								SUFFICIENT
+							</td>
+							<td class="overseas-tablecell">
+							</td>
+							<td class="overseas-tablecell tablecell-check">
+								<label>
+									<input type="checkbox" class="overseas-checkbox"/>
+									<div class="overseas-checkmark"><i class="fas fa-check"></i></div>
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td class="overseas-tablecell tablecell-item">
+								SOCKS<br>袜子
+							</td>
+							<td class="overseas-tablecell tablecell-quantity">
+								1 PAIR
+							</td>
+							<td class="overseas-tablecell">
+							</td>
+							<td class="overseas-tablecell tablecell-check">
+								<label>
+									<input type="checkbox" class="overseas-checkbox"/>
+									<div class="overseas-checkmark"><i class="fas fa-check"></i></div>
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td class="overseas-tablecell tablecell-item">
+								SWEATER / JACKET<br>夹克
+							</td>
+							<td class="overseas-tablecell tablecell-quantity">
+								OPTIONAL
+							</td>
+							<td class="overseas-tablecell">
+							</td>
+							<td class="overseas-tablecell tablecell-check">
+								<label>
+									<input type="checkbox" class="overseas-checkbox"/>
+									<div class="overseas-checkmark"><i class="fas fa-check"></i></div>
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td class="overseas-tablecell tablecell-item overseas-tablecell-bottom">
+								COVERED SHOES<br>包鞋
+							</td>
+							<td class="overseas-tablecell tablecell-quantity overseas-tablecell-bottom">
+								1 PAIR
+							</td>
+							<td class="overseas-tablecell overseas-tablecell-bottom">
+								To be worn at all times during the seminar.
+							</td>
+							<td class="overseas-tablecell tablecell-check overseas-tablecell-bottom">
+								<label>
+									<input type="checkbox" class="overseas-checkbox"/>
+									<div class="overseas-checkmark"><i class="fas fa-check"></i></div>
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td class="overseas-tablecell tablecell-item overseas-tablecell-bottom">
+								SLIPPERS / SANDALS<br>人字拖／拖鞋
+							</td>
+							<td class="overseas-tablecell tablecell-quantity overseas-tablecell-bottom">
+								1 PAIR
+							</td>
+							<td class="overseas-tablecell overseas-tablecell-bottom">
+							</td>
+							<td class="overseas-tablecell tablecell-check overseas-tablecell-bottom">
+								<label>
+									<input type="checkbox" class="overseas-checkbox"/>
+									<div class="overseas-checkmark"><i class="fas fa-check"></i></div>
+								</label>
+							</td>
+						</tr>
+					<!-- 2nd -->
+						<tr>
+							<th rowspan="4" class="overseas-table-header overseas-table-heading-vertical">
+								<div class="header">
+									TOLIETRIES
+								</div>
+							</th>
+							<td class="overseas-tablecell tablecell-item">
+								TOLIETRIES<br>洗漱用品
+							</td>
+							<td class="overseas-tablecell tablecell-quantity">
+								SUFFICIENT
+							</td>
+							<td class="overseas-tablecell">
+							</td>
+							<td class="overseas-tablecell tablecell-check">
+								<label>
+									<input type="checkbox" class="overseas-checkbox"/>
+									<div class="overseas-checkmark"><i class="fas fa-check"></i></div>
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td class="overseas-tablecell tablecell-item">
+								TOOTHBRUSH &amp; TOOTHPASTE<br>牙刷和牙膏
+							</td>
+							<td class="overseas-tablecell tablecell-quantity">
+								1
+							</td>
+							<td class="overseas-tablecell">
+							</td>
+							<td class="overseas-tablecell tablecell-check">
+								<label>
+									<input type="checkbox" class="overseas-checkbox"/>
+									<div class="overseas-checkmark"><i class="fas fa-check"></i></div>
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td class="overseas-tablecell tablecell-item">
+								BATH TOWEL<br>毛巾
+							</td>
+							<td class="overseas-tablecell tablecell-quantity">
+								1
+							</td>
+							<td class="overseas-tablecell">
+							</td>
+							<td class="overseas-tablecell tablecell-check">
+								<label>
+									<input type="checkbox" class="overseas-checkbox"/>
+									<div class="overseas-checkmark"><i class="fas fa-check"></i></div>
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td class="overseas-tablecell tablecell-item overseas-tablecell-bottom">
+								PLASTIC / ZIPLIOC BAGS<br>塑料袋／自封袋
+							</td>
+							<td class="overseas-tablecell tablecell-quantity overseas-tablecell-bottom">
+								SUFFICIENT
+							</td>
+							<td class="overseas-tablecell overseas-tablecell-bottom">
+							</td>
+							<td class="overseas-tablecell tablecell-check overseas-tablecell-bottom">
+								<label>
+									<input type="checkbox" class="overseas-checkbox"/>
+									<div class="overseas-checkmark"><i class="fas fa-check"></i></div>
+								</label>
+							</td>
+						</tr>
+					<!-- 3rd -->
+						<tr>
+							<th rowspan="6" class="overseas-table-header overseas-table-heading-vertical">
+								<div class="header">
+									OTHERS
+								</div>
+							</th>
+							<td class="overseas-tablecell tablecell-item">
+								PERSONAL MEDICATION<br>个人药物<br>
+								(IF APPLICABLE)
+							</td>
+							<td class="overseas-tablecell tablecell-quantity">
+								SUFFICIENT
+							</td>
+							<td class="overseas-tablecell">
+								E.g. Asthma inhaler, etc
+							</td>
+							<td class="overseas-tablecell tablecell-check">
+								<label>
+									<input type="checkbox" class="overseas-checkbox"/>
+									<div class="overseas-checkmark"><i class="fas fa-check"></i></div>
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td class="overseas-tablecell tablecell-item">
+								TRAVEL ADAPTER<br>转换插头
+							</td>
+							<td class="overseas-tablecell tablecell-quantity">
+								1
+							</td>
+							<td class="overseas-tablecell">
+							</td>
+							<td class="overseas-tablecell tablecell-check">
+								<label>
+									<input type="checkbox" class="overseas-checkbox"/>
+									<div class="overseas-checkmark"><i class="fas fa-check"></i></div>
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td class="overseas-tablecell tablecell-item">
+								WRITING MATERIALS<br>文具
+							</td>
+							<td class="overseas-tablecell tablecell-quantity">
+								SUFFICIENT
+							</td>
+							<td class="overseas-tablecell">
+							</td>
+							<td class="overseas-tablecell tablecell-check">
+								<label>
+									<input type="checkbox" class="overseas-checkbox"/>
+									<div class="overseas-checkmark"><i class="fas fa-check"></i></div>
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td class="overseas-tablecell tablecell-item overseas-tablecell-bottom">
+								SPECTACLES / CONTACT LENSES<br>眼镜/隐形眼镜
+							</td>
+							<td class="overseas-tablecell tablecell-quantity overseas-tablecell-bottom">
+								SUFFICIENT
+							</td>
+							<td class="overseas-tablecell overseas-tablecell-bottom">
+							</td>
+							<td class="overseas-tablecell tablecell-check overseas-tablecell-bottom">
+								<label>
+									<input type="checkbox" class="overseas-checkbox"/>
+									<div class="overseas-checkmark"><i class="fas fa-check"></i></div>
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td class="overseas-tablecell tablecell-item overseas-tablecell-bottom">
+								CAP<br>帽子	
+							</td>
+							<td class="overseas-tablecell tablecell-quantity overseas-tablecell-bottom">
+								OPTIONAL
+							</td>
+							<td class="overseas-tablecell overseas-tablecell-bottom">
+							</td>
+							<td class="overseas-tablecell tablecell-check overseas-tablecell-bottom">
+								<label>
+									<input type="checkbox" class="overseas-checkbox"/>
+									<div class="overseas-checkmark"><i class="fas fa-check"></i></div>
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td class="overseas-tablecell tablecell-item overseas-tablecell-bottom">
+								UMBRELLA / RAINCOAT<br>雨伞/雨衣
+							</td>
+							<td class="overseas-tablecell tablecell-quantity overseas-tablecell-bottom">
+								OPTIONAL
+							</td>
+							<td class="overseas-tablecell overseas-tablecell-bottom">
+							</td>
+							<td class="overseas-tablecell tablecell-check overseas-tablecell-bottom">
+								<label>
+									<input type="checkbox" class="overseas-checkbox"/>
+									<div class="overseas-checkmark"><i class="fas fa-check"></i></div>
+								</label>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="buttons">
+					<div class="btn-group">
+						<button class="button" id="local-button">LOCAL</button>
+						<button class="button" id="overseas-button">OVERSEAS</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="container-fluid">
+		<div class="row">
+			<div id="copyright">
+				<img class="img-responsive" src="../static/logo1.png" alt="Logo" width="20%" draggable="false"><br>
+				Organised by River Valley High School, Singapore<br>
+				Website created by the Y.LEAD Organising Committee. All rights reserved.
+			</div>
+			<div id="contacts">
+				CONTACT US<br>
+				<a href="https://www.instagram.com/y.leadofficial/"><i class="fab fa-instagram contacts-icon" draggable="false"></i></a>
+				<a href="https://www.youtube.com/channel/UC0i1jQlubH4igqXM27k2_Mw"><i class="fab fa-youtube contacts-icon" draggable="false"></i></i></a>
+			</div>
+		</div>
+	</footer>
+	<script type="text/javascript" src="../static/information/packing_list.js"></script>
+</body>
+
+<!--
+	Coding done by Zhang Jikun
+	Brought to you by Y.LEAD Publicity Committee
+-->
