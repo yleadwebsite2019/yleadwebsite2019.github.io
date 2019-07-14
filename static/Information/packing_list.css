@@ -1,0 +1,400 @@
+@font-face {
+	font-family: KeepCalm;
+	src: url(../KeepCalm-Medium.ttf)
+}
+
+html {
+  height: 100%;
+}
+
+body{
+	position: relative;
+	min-height: 100%;
+	padding-bottom: 280px;
+	background-color: #353431 !important;
+}
+
+#menu{
+	position: fixed;
+	width: 100%;
+	background-color: rgba(200, 200,200,0.9);
+	z-index : 1;
+}
+
+#menu-close{
+	line-height: 30px;
+	display: none;
+	width: 55px;
+}
+
+.link, .link-header{
+	text-decoration: none !important;
+	color: black;
+	cursor: pointer;
+}
+
+.link:hover, .link-header:hover{
+	color: grey;
+}
+
+.menu-card{
+	background: transparent !important;
+	border: none !important;
+	text-align: center;
+}
+
+.menu-card-header{
+	border: none !important;
+	background: transparent !important;
+}
+
+#ask{
+	margin: 0 !important;
+	z-index: 1;
+	position: fixed;
+	height: 45px;
+	top: 80%;
+	right: 0;
+	border-radius: 2px;
+	background: orange;
+	width: 50px;
+	overflow: hidden;
+	white-space: nowrap;
+	line-height: 40px;
+	font-size: 20px;
+	color: white;
+	padding: 5px;
+}
+
+#ask-link{
+	text-decoration: none !important;
+	cursor: pointer;
+	font-family: KeepCalm;
+	color: white;
+}
+
+#ask-link:hover{
+	color: grey;
+}
+
+.fa-comment-alt{
+	font-size: 35px;
+}
+
+#img-heading{
+	margin-bottom: 60px;
+	margin-top: 80px;
+	max-width: 890px;
+}
+
+#overflow{
+	overflow: hidden;
+	width: 2000px;
+	margin: 0px !important;
+}
+#tables{
+	max-width: 900px;
+	margin: auto;
+}
+
+table{
+	empty-cells: show;
+	margin: auto;
+	max-width: 900px;
+	width: 100%;
+	padding: 0px;
+}
+
+#local{
+
+}
+
+#overseas{
+	display:;
+}
+
+thead{
+	empty-cells: hide;
+}
+
+th, td{
+	text-align: center !important;
+}
+
+.tablecell-item{
+	width: 250px;
+	color: 	white;
+}
+
+.tablecell-quantity{
+	width: 150px;
+	color: 	white;
+}
+
+.tablecell-check{
+	width: 80px;
+	position: relative;
+}
+
+.local-tablecell{
+	border-left: solid 3px orange;
+	border-right: solid 3px orange;
+	height: 50px;
+	font-size: 14px;
+	color: 	white;
+}
+
+.local-table-title{
+	background-color: orange;
+	outline: solid 2px orange;
+	color: white;
+	font-size: 18px;
+	letter-spacing: 3px;
+	max-width: 60px !important;
+}
+
+.local-table-header{
+	border: solid 3px orange;
+	white-space: nowrap;
+	color: orange;
+	font-size: 18px;
+	letter-spacing: 3px;
+	max-width: 50px !important;
+}
+
+.local-checkbox{
+	position: absolute;
+	top: 10px;
+	right: 30%;
+	height: 30px;
+	width: 30px;
+	opacity: 0;
+	cursor: pointer;
+}
+
+.local-checkmark {
+	position: absolute;
+	top: 10px;
+	right: 30%;
+	height: 30px;
+	width: 30px;
+	background-color: white;
+	outline: solid 3px orange;
+	cursor: pointer;
+}
+
+.local-checkmark:hover{
+	background-color: grey;
+}
+
+.local-checkbox:checked ~ .local-checkmark {
+	background-color: orange;
+}
+
+.local-checkbox:checked ~ .local-checkmark .fa-check {
+	display: inline !important;
+}
+
+.local-tablecell-bottom{
+	border-bottom: solid 3px orange;
+}
+
+.overseas-tablecell{
+	border-left: solid 3px rgba(80,210,200,1);
+	border-right: solid 3px rgba(80,210,200,1);
+	height: 50px;
+	font-size: 14px;
+	color: 	white;
+}
+
+.overseas-table-title{
+	background-color: rgba(80,210,200,1);
+	outline: solid 2px rgba(80,210,200,1);
+	color: white;
+	font-size: 18px;
+	letter-spacing: 3px;
+	max-width: 60px !important;
+}
+
+.overseas-table-header{
+	border: solid 3px rgba(80,210,200,1);
+	white-space: nowrap;
+	color: rgba(80,210,200,1);
+	font-size: 18px;
+	letter-spacing: 3px;
+	max-width: 50px !important;
+}
+
+.overseas-checkbox{
+	position: absolute;
+	top: 10px;
+	right: 30%;
+	height: 30px;
+	width: 30px;
+	opacity: 0;
+	cursor: pointer;
+}
+
+.overseas-checkmark {
+	position: absolute;
+	top: 10px;
+	right: 30%;
+	height: 30px;
+	width: 30px;
+	background-color: white;
+	outline: solid 3px rgba(80,210,200,1);
+	cursor: pointer;
+}
+
+.overseas-checkmark:hover{
+	background-color: grey;
+}
+
+.overseas-checkbox:checked ~ .overseas-checkmark {
+	background-color: rgba(80,210,200,1);
+}
+
+.overseas-checkbox:checked ~ .overseas-checkmark .fa-check {
+	display: inline !important;
+}
+
+.overseas-tablecell-bottom{
+	border-bottom: solid 3px rgba(80,210,200,1);
+}
+
+.fa-check{
+	font-size: 30px;
+	display: none !important;
+	color: white;
+}
+
+#overseas{
+	display: none;
+}
+
+.header{
+	margin-left: -500%;
+	margin-right: -500%;
+	transform: rotate(270deg);
+}
+
+.buttons{
+	width: 100%;
+	text-align: center;
+	cursor: pointer;
+}
+
+.btn-group{	
+	margin: auto;
+}
+
+.button{
+	border: none;
+	width: 110px;
+	color: white;
+	font-family: KeepCalm;
+	outline: white !important;
+}
+
+#local-button{
+	background-color: orange;
+}
+
+#overseas-button{
+	background-color: rgba(80,210,200,1);
+}
+
+footer{
+	margin-top: 30px;
+	padding-bottom: 50px;
+	padding-top: 20px;
+	width: 100% !important;
+	position: absolute	;
+	background-image: url(../mass_display.png);
+	background-size: cover;
+	bottom: 0px !important;
+}
+
+#copyright{
+	float: left;
+	text-align: center;
+	color: white;
+	font-family: "Helvetica Neue";
+	width: 50%;
+	padding: 10px;
+}
+
+#contacts{
+	color: white;
+	margin-top: 20px;
+	float: right;
+	text-align: center;
+	width: 50%;
+	font-family: KeepCalm;
+	font-size: 24px;
+	padding: 10px;
+}
+
+.contacts-icon{
+	color: white;
+	font-size: 60px;
+}
+
+.fa{
+	color: white;
+}
+
+@media screen and (max-width: 500px) {
+	#copyright{
+		font-size: 9px;
+	}
+	#contacts{
+		font-size: 16px;
+	}
+	.contacts-icon{
+		font-size: 40px;
+	}
+	.local-tablecell{
+		font-size: 10px;
+	}
+	.local-table-header{
+		font-size: 12px;
+		max-width: 30px !important;
+	}
+	.local-table-title{
+		font-size: 12px;
+		letter-spacing: 0px;
+	}
+	.local-checkbox, .local-checkmark{
+		width: 20px;
+		height: 20px;
+	}
+	.overseas-tablecell{
+		font-size: 10px;
+	}
+	.overseas-table-header{
+		font-size: 12px;
+		max-width: 30px !important;
+	}
+	.overseas-table-title{
+		font-size: 12px;
+		letter-spacing: 0px;
+	}
+	.overseas-checkbox, .overseas-checkmark{
+		width: 20px;
+		height: 20px;
+	}
+	.tablecell-item{
+		width: 90px;
+	}
+	.tablecell-quantity{
+		width: 70px;
+	}
+	.tablecell-check{
+		width: 50px;
+	}
+	.fa-check{
+		font-size: 20px;
+	}
+}
+

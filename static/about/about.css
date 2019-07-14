@@ -1,0 +1,254 @@
+@font-face {
+	font-family: KeepCalm;
+	src: url(../KeepCalm-Medium.ttf)
+}
+
+html {
+  height: 100%;
+}
+
+body{
+	position: relative;
+	text-align: center;
+	min-height: 100%;
+	padding-bottom: 280px;
+	background-color: #353431 !important;
+}
+
+
+#menu{
+	position: fixed;
+	width: 100%;
+	background-color: rgba(200,200,200,0.9);
+	z-index : 1001;
+}
+
+#menu-close{
+	line-height: 30px;
+	display: none;
+	width: 55px;
+}
+
+.link, .link-header{
+	text-decoration: none !important;
+	color: black;
+	cursor: pointer;
+}
+
+.link:hover, .link-header:hover{
+	color: grey;
+}
+
+.menu-card{
+	background: transparent !important;
+	border: none !important;
+	text-align: center;
+}
+
+.menu-card-header{
+	border: none !important;
+	background: transparent !important;
+}
+
+#ask{
+	margin: 0 !important;
+	z-index: 1;
+	position: fixed;
+	height: 45px;
+	top: 80%;
+	right: 0;
+	border-radius: 2px;
+	background: orange;
+	width: 50px;
+	overflow: hidden;
+	white-space: nowrap;
+	line-height: 40px;
+	font-size: 20px;
+	color: white;
+	padding: 5px;
+}
+
+#ask-link{
+	text-decoration: none !important;
+	cursor: pointer;
+	font-family: KeepCalm;
+	color: white;
+}
+
+#ask-link:hover{
+	color: grey;
+}
+
+.fa-comment-alt{
+	font-size: 35px;
+}
+
+#introduction{
+	background-image: url(../about/background.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	width: 100% !important;
+	padding-bottom: 100px;
+	padding-top: 100px;
+}
+
+#about-description{
+	color: white;
+	padding-top: 50px;
+	max-width: 800;
+	margin: auto;
+	margin-bottom: 50px;
+}
+
+#img-heading{
+	width: 300px;
+	margin: auto;
+}
+
+#descriptions{
+	text-align: center;
+}
+
+#carousel{
+	height: 400px;
+}
+
+.cloud9-item{
+	font-size: 200px;
+	font-family: KeepCalm;
+}
+
+#carousel .cloud9-item{
+	cursor: pointer;
+}
+
+#L-description, #E-description, #A-description, #D-description{
+	max-width: 800px;
+	display: none;
+	text-align: left;
+	color: white;
+}
+
+.letter{
+	color: orange;
+	font-size: 80;
+	font-family: KeepCalm;
+}
+
+.word{
+	font-size: 60;
+	font-family: KeepCalm;
+	text-align: center;
+}
+
+.headings{
+	display: inline-table;
+	border-style: solid;
+	border-color: white;
+	border-width: 4px;
+	letter-spacing: 1px;
+	font-family: KeepCalm;
+	margin-bottom: 30px;
+	margin-top: 30px;
+	padding: 3px;
+	font-size: 18px;
+	text-decoration: none !important;
+	color: white;
+}
+
+.headings:hover{
+	color: grey;
+}
+
+.word-description{
+	text-align: justify;
+}
+
+footer{
+	margin-top: 100px;
+	padding-bottom: 50px;
+	padding-top: 20px;
+	width: 100% !important;
+	position: absolute;
+	background-image: url(../mass_display.png);
+	background-size: cover;
+	bottom: 0px !important;
+}
+
+#copyright{
+	float: left;
+	text-align: center;
+	color: white;
+	font-family: "Helvetica Neue";
+	width: 50%;
+	padding: 10px;
+}
+
+#contacts{
+	color: white;
+	margin-top: 20px;
+	float: right;
+	text-align: center;
+	width: 50%;
+	font-family: KeepCalm;
+	font-size: 24px;
+	padding: 10px;
+	letter-spacing: 3px;
+}
+
+.contacts-icon{
+	color: white;
+	font-size: 60px;
+}
+
+.fa{
+	color: white;
+}
+
+@media screen and (max-width: 1000px) {
+	#introduction{
+		background-size: cover;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.headings{
+		font-size: 14px;
+	}
+	#copyright{
+		font-size: 9px;
+	}
+	#contacts{
+		font-size: 16px;
+	}
+	.contacts-icon{
+		font-size: 40px;
+	}
+	#introduction{
+		font-size: 12px;
+		padding-bottom: 40px;
+		padding-top: 80px;
+	}
+	#img-heading{
+		width: 150px;
+	}
+	#about-description{
+		padding-top: 20px;
+		margin-bottom: 20px;
+	}
+	.cloud9-item{
+		font-size: 100px;
+	}
+	#carousel{
+		height: 200px;
+	}
+	#L-description, #E-description, #A-description, #D-description{
+		font-size: 12px;
+	}
+	.letter{
+		font-size: 40px;
+	}
+	.word{
+		font-size: 20px;
+	}
+}
