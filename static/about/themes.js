@@ -27,10 +27,16 @@ $(document).ready(function(){
 	$("#smart_city").hover(function(){
 		$("#description-smart_city").stop().fadeIn();
 	});
+	$("#heritage_n_community").hover(function(){
+		$("#description-heritage_n_community").stop().fadeIn();
+	});
 	$("#changemakers").mouseleave(function(){
 		$("#description-changemakers").stop().fadeOut();
 	});
 	$("#smart_city").mouseleave(function(){
 		$("#description-smart_city").stop().fadeOut();
+	});
+	$("#heritage_n_community").mouseleave(function(){
+		$("#description-heritage_n_community").stop().fadeOut();
 	});
 });

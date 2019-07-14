@@ -210,6 +210,7 @@ body{
 	text-align: center;
 	width: 100%;
 	margin: 0 !important;
+	background-size: cover;
 }
 
 #dos-list, #donts-list{

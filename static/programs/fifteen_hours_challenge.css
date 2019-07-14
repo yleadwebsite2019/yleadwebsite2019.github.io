@@ -114,6 +114,14 @@ body{
 	font-size: 18px;
 }
 
+#theme{
+	font-size: 30;
+	font-weight: bold;
+	color: white;
+	font-family: KeepCalm;
+	letter-spacing: 3;
+}
+
 #video{
 	max-width: 800px;
 	width: 60vw;
