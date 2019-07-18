@@ -1,0 +1,157 @@
+@font-face {
+	font-family: KeepCalm;
+	src: url(../KeepCalm-Medium.ttf)
+}
+
+html {
+  height: 100%;
+}
+
+body{
+	position: relative;
+	min-height: 100%;
+	padding-bottom: 280px;
+	background-color: #353431 !important;
+}
+
+#menu{
+	position: fixed;
+	width: 100%;
+	z-index : 1;
+	background-color: rgba(200,200,200,0.9);
+}
+
+#menu-close{
+	line-height: 30px;
+	display: none;
+	width: 55px;
+}
+
+.link, .link-header{
+	text-decoration: none !important;
+	color: black;
+	cursor: pointer;
+}
+
+.link:hover, .link-header:hover{
+	color: grey;
+}
+
+.menu-card{
+	background: transparent !important;
+	border: none !important;
+	text-align: center;
+}
+
+.menu-card-header{
+	border: none !important;
+	background: transparent !important;
+}
+
+.fa-comment-alt{
+	font-size: 35px;
+}
+
+.container{
+	text-align: center;
+}
+
+#img-intro{
+	margin-bottom: 60px;
+	margin-top: 80px;
+	max-width: 890px;
+	align-self: left;
+}
+
+#intro{
+	max-width: 600px;
+	margin: auto;
+	text-align: justify; 
+	color: white;
+}
+
+.headings{
+	color: white;
+	display: inline-table;
+	border-style: solid;
+	border-color: white;
+	border-width: 4px;
+	letter-spacing: 1px;
+	font-family: KeepCalm;
+	margin: auto;
+	margin-bottom: 30px;
+	margin-top: 30px;
+	padding: 3px;
+	font-size: 18px;
+}
+
+.video{
+	max-width: 800px;
+	width: 70vw;
+	height: 40vw;
+	margin: auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+footer{
+	margin-top: 30px;
+	position: absolute;
+	padding-bottom: 50px;
+	padding-top: 20px;
+	width: 100% !important;
+	background-image: url(../mass_display.png);
+	background-size: cover;
+	bottom: 0px !important;
+}
+
+#copyright{
+	float: left;
+	text-align: center;
+	color: white;
+	font-family: "Helvetica Neue";
+	width: 50%;
+	padding: 10px;
+}
+
+#contacts{
+	color: white;
+	margin-top: 20px;
+	float: right;
+	text-align: center;
+	width: 50%;
+	font-family: KeepCalm;
+	font-size: 24px;
+	padding: 10px;
+}
+
+.contacts-icon{
+	color: white;
+	font-size: 60px;
+}
+
+.fa{
+	color: white;
+}
+
+@media screen and (max-width: 500px) {
+	.headings{
+		font-size: 14px;
+	}
+	#copyright{
+		font-size: 9px;
+	}
+	#contacts{
+		font-size: 16px;
+	}
+	.contacts-icon{
+		font-size: 40px;
+	}
+	#intro{
+		font-size: 12px;
+	}
+	.video{
+		border-width: 5px;
+	}
+}
+

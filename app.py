@@ -30,6 +30,11 @@ def principals_words():
 	return render_template('principals_words.html')
 
 #DONE
+@app.route("/About/Webisodes")
+def webisodes():
+	return render_template('webisodes.html')
+
+#DONE
 @app.route('/Programs')
 def programs():
 	return render_template('programs.html')
